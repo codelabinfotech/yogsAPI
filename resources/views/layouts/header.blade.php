@@ -11,6 +11,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{ route('exercise.index') }}">Exercise</a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{ route('wallpaper.index') }}">Wallpaper</a>
+        </li>
       </ul>
     </div>
   </nav>
