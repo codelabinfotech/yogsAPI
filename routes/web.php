@@ -44,3 +44,12 @@ use Illuminate\Support\Facades\Route;
     Route::get('/wallpaper-edit/{id}', [WallpaperController::class, 'edit'])->name('wallpaper.edit');
     Route::post('/wallpaper-update/{id}', [WallpaperController::class, 'update'])->name('wallpaper.update');
     Route::get('/wallpaper-delete/{id}', [WallpaperController::class, 'delete'])->name('wallpaper.delete');
+
+// Yoga
+
+    Route::get('/yoga', [YogaController::class, 'index'])->name('yoga.index');
+    Route::get('/yoga-create', [YogaController::class, 'create'])->name('yoga.create');
+    Route::post('/yoga-store', [YogaController::class, 'store'])->name('yoga.store');
+    Route::get('/yoga-edit/{id}', [YogaController::class, 'edit'])->name('yoga.edit');
+    Route::post('/yoga-update/{id}', [YogaController::class, 'update'])->name('yoga.update');
+    Route::get('/yoga-delete/{id}', [YogaController::class, 'delete'])->name('yoga.delete');
