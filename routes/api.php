@@ -24,3 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/excersice/{id}', [ExcerciseAPIController::class, 'getData']);
 
 Route::get('/excersices/{id}', [ExcerciseAPIController::class, 'getExcersiceData']);
+
+Route::get('/wallpaper/{id}', [WallpaperAPIController::class, 'getData']);
+
+Route::get('/yoga/{id}', [YogaAPIController::class, 'getData']);
