@@ -21,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/excersice/{id}', [ExcerciseAPIController::class, 'getData']);
+Route::get('/days', [ExcerciseAPIController::class, 'getDays']);
+
+Route::get('/excersice', [ExcerciseAPIController::class, 'getData']);
 
 Route::get('/excersices/{id}', [ExcerciseAPIController::class, 'getExcersiceData']);
 

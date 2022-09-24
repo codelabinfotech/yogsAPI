@@ -18,6 +18,9 @@ class DaysTable extends DataTableComponent
     public function columns(): array
     {
         return [
+            Column::make("id", "id")
+                ->sortable()
+                ->searchable(),
             Column::make("Days", "days")
                 ->sortable()
                 ->searchable(),

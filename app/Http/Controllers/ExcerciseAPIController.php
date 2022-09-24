@@ -9,9 +9,16 @@ use App\Http\Resources\ExcersiceResource;
 
 class ExcerciseAPIController extends Controller
 {
-    public function getData($id)
+
+    public function getDays()
     {
-        $data = Excercise::with('day:id,days')->where('day_id', $id)->get();
+        $data['days'] = Days::all();
+        return $data;
+    }
+
+    public function getData()
+    {
+        $data['excersice'] = Excercise::with('day:id,days')->get();
         return $data;
     }
 
