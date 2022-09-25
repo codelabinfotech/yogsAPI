@@ -15,13 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('login');
-// });
+Route::get('/', function () {
+    return view('login');
+});
+Route::post('/login', [LoginController::class, 'login'])->name('login.post');
 
 
 // Days/Excersice
-    Route::get('/', [CategoryController::class, 'index'])->name('category.index');
+    Route::get('/category', [CategoryController::class, 'index'])->name('category.index');
     Route::get('/category-create', [CategoryController::class, 'create'])->name('category.create');
     Route::get('/category-edit/{id}', [CategoryController::class, 'edit'])->name('category.edit');
     Route::post('/category-store', [CategoryController::class, 'store'])->name('category.store');
